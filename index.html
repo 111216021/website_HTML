@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林柏諺的個人部落格</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-image: url('assets/picture/1.jpg'); /* 替換為你的圖片網址 */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* 高度設定為視窗高度 */
+            color: white;
+            text-align: center;
+            display: flex; /* 中央對齊設定 */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: #343a40;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .profile-img {
+            float: left;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 頁頭與導覽列 -->
+    <header>
+        <h1>林柏諺的個人部落格</h1>
+    </header>
+    <nav>
+        <a href="#section1">關於我</a>
+        <a href="#section2">工作經歷</a>
+        <a href="#section3">工作技能</a>
+        <a href="#section4">音樂作品推薦</a>
+        <a href="#section5">視訊作品推薦</a>
+        <a href="#section6">圖片作品推薦</a>
+        <a href="#section7">更多資訊</a>
+    </nav>
+    <main class="container">
+        <!-- Section 1: 關於我 -->
+        <section id="section1" class="section">
+            <h2>關於我</h2>
+            <img src="assets\picture\2.jpg" alt="Lin 的照片" class="profile-img">
+            <p><strong>林柏諺</strong><br>國立台北教育大學</p>
+            <p>最大興趣為欣賞與追求藝術，涵蓋古典音樂、繪畫與建築等</p>
+        </section>
+
+        <!-- Section 2: 工作經歷 -->
+        <section id="section2" class="section">
+            <h2>工作經歷</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>年份</th>
+                        <th>單位</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>Berry AI 華捷智能</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Garmin 台灣國際航電</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Section 3: 工作技能 -->
+        <section id="section3" class="section">
+            <h2>工作技能</h2>
+            <ul>
+                <li>人工智慧開發與應用</li>
+                <li>人工智能訓練與大數據統整</li>
+            </ul>
+        </section>
+
+        <!-- Section 4: 音樂作品 -->
+        <section id="section4" class="section">
+            <h2>音樂作品推薦</h2>
+            <p>Maria Callas - Puccini: Madama Butterfly, Act 2:"Un bel dì, vedremo "</p>
+            <audio controls>
+                <source src="assets\music\Callas.mp3" type="audio/mpeg">
+            </audio>
+            <p>Gabriel Fauré: The Pavane in F-sharp minor, Op. 50</p>
+            <audio controls>
+                <source src="assets\music\Fauré.mp3" type="audio/mpeg">
+            </audio>
+            <p>Hilary Hahn - Sibelius: Violin Concerto in D Minor, Op. 47 - III. Allegro, ma non tanto</p>
+            <audio controls>
+                <source src="assets\music\Hahn.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- Section 5: 視訊作品 -->
+        <section id="section5" class="section">
+            <h2>視訊作品推薦</h2>
+            <video controls width="850">
+                <h2>視訊作品推薦</h2>
+                <source src="assets\video\Mozart.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Section 6: 圖片作品 -->
+        <section id="section6" class="section">
+            <h2>圖片作品推薦</h2>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <img src="assets\picture\3.jpg" alt="圖片1" width="275">
+                <img src="assets\picture\4.jpg" alt="圖片2" width="275">
+                <img src="assets\picture\5.jpg" alt="圖片3" width="275">
+            </div>
+        </section>
+
+        <!-- Section 7: 更多資訊 -->
+        <section id="section7" class="section">
+            <h2>更多資訊</h2>
+            <p>欲了解更多，請聯絡我或瀏覽相關資源。</p>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer>
+        聯絡我：<a href="mailto:contact@personalblog.com">s111216021@stu.ntue.edu.tw</a><br>
+        最後更新日期：2024年11月28日
+    </footer>
+</body>
+</html>
